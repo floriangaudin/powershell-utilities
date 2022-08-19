@@ -3,16 +3,24 @@
     Performs installation of Dell drivers pack
 
     .DESCRIPTION
-    The install-dell-driverspack.ps1 install all drivers packed in .cab file
+    The install-dell-driverspack.ps1 install all drivers packed in .cab file.
+
+    .PARAMETER File
+    Optionnal. Specifies the path to the cab file. 
+    By default, the cab file must be in the same 
+    directory as the install-dell-driverspack.ps1 script.
 
     .INPUTS
     None.
 
     .OUTPUTS
-    None.
+    Generates expand.exe and pnputil.exe generics outputs
 
     .EXAMPLE
     PS> .\install-dell-driverspack.ps1
+
+    .EXAMPLE
+    PS> .\install-dell-driverspack.ps1 -File "C:\Cabs\9020 AIO-WIN10-A04-HFGR3.CAB"
 #>
 
 Param(
