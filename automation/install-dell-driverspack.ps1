@@ -23,6 +23,8 @@
     PS> .\install-dell-driverspack.ps1 -File "C:\Cabs\9020 AIO-WIN10-A04-HFGR3.CAB"
 #>
 
+#Requires -RunAsAdministrator
+
 Param(
     [parameter()]
     [ValidateScript({
