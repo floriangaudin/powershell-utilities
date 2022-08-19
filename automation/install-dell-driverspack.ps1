@@ -65,5 +65,5 @@ Get-ChildItem -Path $cabExtractedDirectory -Include *.inf -Recurse | ForEach-Obj
 #return to orignal script call location
 Set-Location $originalWorkingDirectory
 
-Write-Host "Installation success." -ForegroundColor Green -BackgroundColor Black
+Write-Host "Installations succeed." -ForegroundColor Green -BackgroundColor Black
 pause
