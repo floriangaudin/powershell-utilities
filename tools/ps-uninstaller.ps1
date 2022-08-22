@@ -154,7 +154,7 @@ function Get-UninstallCommand {
         #possible values $split[1] : absolute path to executable uninstaller program
         #possible values $split[2] : can be null or contains executable uninstaller program args
 
-        #if any, replace "" char by '' to prevent any space in absolute path
+        #if any, replace " (doublequote) char by ' (quote) to prevent any space in absolute path
         if(-not $split[1].StartsWith('"'))
         {  
             $split[1] = "`"$($split[1])`"" 
